@@ -9,6 +9,7 @@
 - Create a conda environment:
     - ```conda create --name llamatrain```
     - ```conda activate llamatrain ```
+    - ```conda install python=3.11``` #Might need to use py3.11 to avoid an issue with installing the sentencepiece package for autotrain-advanced. 
     - ```cd llama```
     - ```pip install -e .```
 - Create a kernel for using the conda environment in proj.ipynb

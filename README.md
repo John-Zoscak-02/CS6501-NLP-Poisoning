@@ -9,11 +9,16 @@
 - Create a conda environment:
     - ```conda create --name llamatrain```
     - ```conda activate llamatrain ```
-    - ```conda install python=3.11``` #Might need to use py3.11 to avoid an issue with installing the sentencepiece package for autotrain-advanced. 
-    - ```cd llama```
-    - ```pip install -e .```
+    - ```conda install python=3.11``` #Might need to use py3.11 to avoid an issue with installing the sentencepiece package for autotrain-advanced.  
+    - If trying to use autotrain-advanced:
+        - ```pip install autotrain-advanced```
+    -If trying to run with standard procedures...
+        - \# ```cd llama```
+        - \# ```pip install -e .```
 - Create a kernel for using the conda environment in proj.ipynb
     - ```conda activate llamatrain```
     - ```conda install -c anaconda ipykernel```
     - ```python -m ipykernel install --user --name=llamatrain```
     - Choose llamatrain as the kernel of choice when running the jupyter notebook
+- Run finetuning:
+    - ./llama/autotrain-7b-chat.sh
